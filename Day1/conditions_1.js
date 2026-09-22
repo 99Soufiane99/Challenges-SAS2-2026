@@ -60,3 +60,4 @@ else if(montant <= 500 && montant >= 0) {
     console.log("Total à payer : " +( montant + 40) + " DH")
 }
 
+

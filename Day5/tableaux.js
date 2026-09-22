@@ -63,12 +63,52 @@ console.log("")
 
 
 function ajouterALaFin(tab, element) {
-let i = 0
-    while(i < element.length) {
-        tab[tab.length] = element
-        i++
-    }
+
+    tab[tab.length] = element
     console.log(tab)
 }
 
-ajouterALaFin([1, 2, 3], 4)
+ajouterALaFin([1, 2, 3], "hello")
+
+
+// Challenge 5 : Recherche d'Élément (Simulation de includes)
+
+console.log("")
+console.log("Challenge 5 : Recherche d'Élément (Simulation de includes)")
+console.log("")
+
+function contientElement(tab, valeur) {
+    let i = 0
+    let verifi = false
+    while(i < tab.length) {
+        if(tab == valeur) {
+            verifi = true
+        }
+        i++
+    }
+    console.log(verifi)
+}
+
+contientElement(["pomme", "banane"], "banane")
+
+// Challenge 6 : Inversion Manuelle (Simulation de reverse)
+
+console.log("")
+console.log("// Challenge 6 : Inversion Manuelle (Simulation de reverse)")
+console.log("")
+let tab = [1, 2, 3 , 4, 5, 6, 7, 8]
+function inverserTableau(tab) {
+    let i = tab.length - 1
+    let j = 0
+    let tempoo = 0
+    while(i >= (tab.length / 2) ) {
+     tempoo = tab[j]
+     tab[j] = tab[i]
+     tab[i] = tempoo
+     i--
+     j++
+    }
+}
+
+inverserTableau(tab)
+console.log(tab)
