@@ -35,3 +35,21 @@ function genererEmail(prenom, nom) {
 
 genererEmail("hello", "soufiane")
 
+
+// Challenge 4 : Salutation Personnalisée avec Valeur par Défaut
+console.log("\n Challenge 4 : Salutation Personnalisée avec Valeur par Défaut \n")
+
+function saluerClient(nom, titre = "Client") {
+   console.log("Bonjour " + titre + " " + nom)
+}
+saluerClient("soufiane")
+
+
+// Challenge 5 : Le Somateur Universel (Rest Parameter)
+console.log("\n Challenge 5 : Le Somateur Universel (Rest Parameter)\n")
+
+function additionnerTout() {
+    
+}
+
+

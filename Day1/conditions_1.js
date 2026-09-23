@@ -61,3 +61,49 @@ else if(montant <= 500 && montant >= 0) {
 }
 
 
+// Challenge 5 : Recherche d'Élément (Simulation de includes)
+
+
+let notee = 10
+if(notee < 10) {
+    console.log("Échec")
+}
+else if(notee >= 10 && notee <= 11.99){
+    console.log("Passable")
+}
+else if(notee >= 12 && notee <= 13.99){
+    console.log("Assez bien")
+}
+else if(notee >= 14 && notee <= 15.99){
+    console.log("Bien")
+}
+else if(notee >= 16 && notee <= 17.99){
+    console.log("Très bien")
+}
+else if(notee >= 18 && notee <= 20){
+    console.log("Excellent")
+}
+
+
+// Challenge 6 : Menu d'une application
+
+
+const prompt = require('prompt-sync')()
+let option = Number(prompt("Choix : "))
+switch(option) {
+    case 1:
+        console.log("Afficher le profil")
+        break
+    case 2:
+        console.log("Afficher les paramètres")
+        break
+    case 3:
+        console.log("Afficher les notifications")
+        break
+    case 4:
+        console.log("Se déconnecter")
+        break
+    default :
+    console.log("Choix invalide.")
+    
+}

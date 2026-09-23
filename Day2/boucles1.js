@@ -96,3 +96,25 @@ console.log("")
 console.log("Challenge 7 : Trouver le premier nombre supérieur")
 console.log("")
 
+let number7 = 100
+let i7 = 1
+while(i7 <= number7) {
+    if(i7 * i7 > number7) {
+        console.log("Résultat : " + i7 )
+        break
+    }
+    i7++
+    }
+
+
+// Challenge 8 : Accumulation de points
+
+
+console.log("\n Challenge 8 : Accumulation de points \n")
+
+let mission = 5
+let i8 = 1
+while(i8 <=5) {
+    console.log("Mission "+ i8 +" -> Score : " + (100 * i8))
+    i8++
+}
