@@ -96,3 +96,16 @@ function estPalindrome(chaine) {
 
 let palindrome = estPalindrome("radar")
 console.log(palindrome)
+
+// Challenge 6 : Duplication de Chaîne (Simulation de repeat)
+console.log(`\nChallenge 6 : Duplication de Chaîne (Simulation de repeat)\n`)
+
+function repeterChaine(chaine, fois) {
+    let str = ""
+    for(let i = 0; i < fois; i++){
+        str += chaine
+    }
+    return str
+}
+let repeter = repeterChaine("JS", 3)
+console.log(repeter)

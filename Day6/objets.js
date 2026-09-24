@@ -1,3 +1,5 @@
+const prompt = require('prompt-sync')()
+
 // Challenge 01 — Profil étudiant
 console.log("\nChallenge 01 - Profil etudiant\n")
 let student = {
@@ -61,3 +63,38 @@ let employee = {
 let penality = employee.absenceDays * 200
 let salairefinal = (employee.salary + employee.bonus) - penality
 console.log(` salaire de base : ${employee.salary - penality} DH\n Le bonus : ${employee.bonus} DH\n Les pénalités : ${penality}DH\n Le salaire final : ${salairefinal} DH`)
+
+// Challenge 05 — Gestion d'un compte bancaire
+console.log(`\nChallenge 05 — Gestion d'un compte bancaire\n`)
+
+let account = {
+    owner: "Tayeb",
+    balance: 5000,
+    type: "saving"
+};
+function afichersold(objet){
+    console.log(`votre sold : ${account.balance} DH`)
+}
+
+function deposerargent(objet, deposit){
+   let balance = objet.balance + deposit
+   return balance
+}
+function withdraw(objet, withdraw){
+    let balance = objet.balance + withdraw
+    return balance
+}
+
+function verifiersold(objet){
+    if(objet.balance > 1){
+        console.log("solde est suffisant.")
+    }
+    else{
+        console.log("insufisant")
+    } 
+}
+function afficherinfo(objet){
+    console.log(`owner : ${owner}\nbalance : ${balance}\ntype : ${type}`)
+    }
+
+

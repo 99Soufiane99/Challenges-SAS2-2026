@@ -48,8 +48,14 @@ saluerClient("soufiane")
 // Challenge 5 : Le Somateur Universel (Rest Parameter)
 console.log("\n Challenge 5 : Le Somateur Universel (Rest Parameter)\n")
 
-function additionnerTout() {
-    
+function additionnerTout(...args) {
+    let result = 0
+    for(let i = 0; i < args.length; i++) {
+        result += args[i]
+    }
+    return result
 }
+let result = additionnerTout(10, 20, 30, 40)
+console.log(result)
 
 

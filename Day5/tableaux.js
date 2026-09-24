@@ -112,3 +112,21 @@ function inverserTableau(tab) {
 
 inverserTableau(tab)
 console.log(tab)
+
+// Challenge 7 : Filtrage Manuel des Nombres Pairs
+console.log(`\nChallenge 7 : Filtrage Manuel des Nombres Pairs\n`)
+
+function filtrerPairs(tab){
+    let tab2 = []
+    let j = 0
+    for(let i = 0; i < tab.length; i++){
+        if(tab[i] % 2 == 0){
+         tab2[j] = tab[i] 
+         j++ 
+        }
+    }
+    return tab2
+}
+
+let fileter = filtrerPairs([1, 2, 3, 4, 5, 6])
+console.log(fileter)

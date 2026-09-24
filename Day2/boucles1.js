@@ -118,3 +118,15 @@ while(i8 <=5) {
     console.log("Mission "+ i8 +" -> Score : " + (100 * i8))
     i8++
 }
+
+// Challenge 9 : Trouver une puissance
+console.log(`\n Challenge 9 : Trouver une puissance\n`)
+let base = 2
+let exposant = 5
+let result = 1
+let i9 = 0
+while(i9 < exposant){
+    result = result * base
+    i9++
+}
+console.log(result)

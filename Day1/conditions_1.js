@@ -107,3 +107,51 @@ switch(option) {
     console.log("Choix invalide.")
     
 }
+
+// Challenge 7 : Jour de la semaine
+console.log(`\nChallenge 7 : Jour de la semaine\n`)
+
+let num7 = 0
+
+switch(num7) {
+    case 1:
+        console.log("Lundi")
+    case 2:
+        console.log("Mardi")
+    case 3:
+        console.log("Mercredi")
+    case 4:
+        console.log("Jeudi")
+    case 5:
+        console.log("Vendredi")
+    case 6:
+        console.log("Samedi")
+    case 7:
+        console.log("Dimanche")
+    default:
+        console.log("Numéro invalide.")
+}
+
+// Challenge 8 : Calculatrice simple
+console.log(`\n Challenge 8 : Calculatrice simple \n`)
+let number1 = 2
+let number2 = 3
+let operator = "*"
+console.log(`Premier nombre : ${number1}\n Opérateur : ${operator}\nDeuxième nombre : ${number2}\n\n`)
+switch(operator) {
+    case operator = "/":
+        console.log(`resulta : ${number1 / number2}`)
+        break
+    case operator = "*":
+        console.log(`resulta : ${number1 * number2}`)
+        break
+    case operator = "+":
+        console.log(`resulta : ${number1 + number2}`)
+        break
+    case operator = "-":
+        console.log(`resulta : ${number1 - number2}`)
+        break
+    default:
+        console.log(`Opérateur invalide.`)
+        break
+}
